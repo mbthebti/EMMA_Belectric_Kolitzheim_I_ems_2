@@ -1,0 +1,7 @@
+*.log*
+*.xml
+*.iml
+__pycache__
+install.sh
+uninstall.sh
+update_git_token.sh
