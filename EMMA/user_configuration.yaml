@@ -1,0 +1,35 @@
+controls:
+  turn_on: true
+  reboot: true
+  mode: automatic
+  manual_c_rate: 0.3
+  run_check_emma: false
+debug:
+  ev_station: false
+  grafana: false
+  influxdb: false
+fleet:
+  display_name: Kolitzheim I
+  grafana_dashboard: edzk73roec4jka
+EMS:
+  client: belectric
+  site_name: belectric_kolitzheim_1
+  site_coordinates:
+  - 52.37312457596063
+  - 4.891530917641049
+  timestep: 5
+  has_ev_station: true
+  peak_shaving:
+    is_activated: true
+interface:
+  battery:
+    type: Adstec
+    ipaddr: 192.168.1.214
+    protection_soc: 3
+    min_soc: 5
+    max_soc: 100
+    energy_capacity: 199
+    nominal_charge_power: 88
+    nominal_discharge_power: 88
+    watchdog_timeout: 120
+    debug: false
