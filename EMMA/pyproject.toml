@@ -1,0 +1,58 @@
+[project]
+name = "energy-management"
+version = "3.50.0"
+description = "Aurora's Grid Energy Management for Multiple Applications"
+readme = "readme.md"
+requires-python = ">=3.9"
+classifiers = ["Private :: Do Not Upload"]
+dependencies = [
+    "astral>=3.2",
+    "entsoe-py>=0.6.18",
+    "excelrd>=3.0.0",
+    "httpx>=0.28.1",
+    "numpy>=2.0.2",
+    "ocpp>=2.0.0",
+    "paho-mqtt>=2.1.0",
+    "pandas>=2.2.3",
+    "psutil>=7.0.0",
+    "pvlib>=0.11.2",
+    "pyarrow>=19.0.1",
+    "pydantic>=2.10.6",
+    "pymodbus>=3.8.6",
+    "pyserial>=3.5",
+    "pysunspec2>=1.1.8",
+    "python-can>=4.5.0",
+    "pyyaml>=6.0.2",
+    "scapy>=2.6.1",
+    "scipy>=1.13.1",
+    "toml>=0.10.2",
+    "websockets>=15.0.1",
+    "xmltodict>=0.14.2",
+]
+
+[dependency-groups]
+dev = [
+    "lenspy>=1.1.0",
+    "mat4py>=0.6.0",
+    "matplotlib>=3.9.4",
+    "plotly>=6.0.1",
+    "pyarmor>=9.1.2",
+    "pytest>=8.3.5",
+    "yappi>=1.6.10",
+]
+sizing = [
+    "dotsi>=0.0.3",
+    "matplotlib>=3.9.4",
+]
+
+[tool.uv]
+default-groups = []
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.format]
+quote-style = "single"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
